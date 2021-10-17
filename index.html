@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <div id="heading">
+      <h1>Roll The Dice</h1>
+    </div>
+    <div id="darkmode">
+      <label class="theme-switch" id="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slide round"></div>
+      </label>
+      <h3>Enable Dark Mode!</h3>
+    </div>
+    <div class="dice">
+      <div class="one">
+        <span class="text">Your Guess :</span>
+        <span class="text" id="text"> 0</span>
+      </div>
+      <div class="two" id="two">
+        <img src="assets/1.jpeg" alt="" />
+      </div>
+      <div class="three">
+        <span class="text">Score : </span>
+        <span id="score" class="text"></span>
+      </div>
+    </div>
+    <div class="newGameButton">
+      <button class="newGame" id="newGame"role="button">New Game</button>
+    </div>
+    <div class="buttons">
+      <div class="b1">
+        <button class="diceButton" type="submit" form="nameform" value="Submit" id="d1">1</button>
+      </div>
+      <div class="b1">
+        <button class="diceButton"type="submit" form="nameform" value="Submit"id="d2">2</button>
+      </div>
+      <div class="b1">
+        <button class="diceButton"type="submit" form="nameform" value="Submit"id="d3">3</button>
+      </div>
+      <div class="b1">
+        <button class="diceButton" type="submit" form="nameform" value="Submit"id="d4">4</button>
+      </div>
+      <div class="b1">
+        <button class="diceButton" type="submit" form="nameform" value="Submit"id="d5">5</button>
+      </div>
+      <div class="b1">
+        <button class="diceButton"type="submit" form="nameform" value="Submit"id="d6">6</button>
+      </div>
+    </div>
+    <div id="timer" class="message"><span class="message">The Game will start in few seconds!</span></div>
+     <div id="message"> </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
